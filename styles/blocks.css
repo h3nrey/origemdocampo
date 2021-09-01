@@ -1,0 +1,39 @@
+main{
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    background-color: rgb(227, 227, 228);
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: all 300ms;
+}
+
+.block:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.block img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.block h2{
+    margin-top: 0.8rem;
+    user-select: none;
+}

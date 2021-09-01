@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Magnético</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/blocks.css">
+    <link rel="stylesheet" href="styles/calc.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Origem do Campo Magnético</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="blocks">
+            <div class="blockHolder">
+                <div class="block" id="r">
+                    <img src="https://cdn.pixabay.com/photo/2019/11/06/10/26/cable-4605760_960_720.jpg" alt="">
+                    <h2>Fio Reto</h2>
+                </div>
+                <div class="block" id="c">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_JJJ4o4Jcg48%2FTMTNlwAy_9I%2FAAAAAAAAX8E%2FfZiE1oRsX64%2Fs1600%2Fexseg%2B11.jpg&f=1&nofb=1"
+                        alt="">
+                    <h2>Espira Circular</h2>
+                </div>
+                <div class="block" id="b">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.ebayimg.com%2Fimages%2Fi%2F261932070485-0-1%2Fs-l1000.jpg&f=1&nofb=1"
+                        alt="">
+                    <h2>Bobina chata</h2>
+                </div>
+                <div class="block" id="s">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fqph.fs.quoracdn.net%2Fmain-qimg-1308547928a27251da5f51c3779bcda1&f=1&nofb=1"
+                        alt="">
+                    <h2>Solenoide</h2>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="calc">            
+            <div class="calcHolder">
+                <div class="r hidden lador">
+                    <div class="tittleHolder">
+                        <h2 class="wireTittle">Fio Reto Longo</h2>
+                    </div>
+        
+                    <div class="count">
+                        
+                        <div class="variavel centerGrid">
+                            <span class="big">B</span>
+                            <input type="number" name="" id="campoReto">
+                            <span>=</span>
+                        </div>
+            
+                        <div class="minors">
+                            <div class="coisas centerGrid">
+                                <span>μ<sub>0</sub></span>
+                                <input type="number" name="" id="miReto" value="">
+                                <span>i</span>
+                                <input type="number" name="" id="intensidadeReto">
+                            </div>
+                            <div class="divider"></div>
+                            <div class="coisas centerGrid">
+                                <span>2兀</span>
+                                <span>d</span>
+                                <input type="number" name="" id="distanciaReto">
+                            </div>
+                        </div>
+            
+                    </div>
+                    <button class="btnCalcular">Calcular</button>
+                </div>
+                <div class="c hidden lador">
+                    <div class="tittleHolder">
+                        <h2 class="wireTittle">Espira Circular</h2>
+                    </div>
+                    <div class="count">                
+                        <div class="variavel centerGrid">
+                            <span class="big">B</span>
+                            <input type="number" name="" id="Campo">
+                            <span>=</span>
+                        </div>
+                
+                        <div class="minors">
+                            <div class="coisas centerGrid">
+                                <span>μ<sub>0</sub></span>
+                                <input type="number" name="" id="mi" value="">
+                                <span>i</span>
+                                <input type="number" name="" id="intensidade">
+                            </div>
+                            <div class="divider"></div>
+                            <div class="coisas centerGrid">
+                                <span>2</span>
+                                <span>R</span>
+                                <input type="number" name="" id="raio">
+                            </div>
+                        </div>
+                
+                    </div>    
+                    <button class="btnCalcular">Calcular</button>
+                </div>
+                <div class="b hidden lador">
+                    <div class="tittleHolder">
+                        <h2 class="wireTittle">Bombina Chata</h2>
+                    </div>
+                    <div class="count">
+                
+                        <div class="variavel centerGrid">
+                            <span class="big">B</span>
+                            <input type="number" name="" id="campoChatas">
+                            <span>=</span>
+                        </div>
+                
+                        <div class="minors">
+                            <div class="coisas centerGrid">
+                                <span>N</span>
+                                <input type="number" name="" id="voltasChatas" value="">
+                                <span>μ<sub>0</sub></span>
+                                <input type="number" name="" id="miChatas" value="">
+                                <span>i</span>
+                                <input type="number" name="" id="intensidadeChatas">
+                            </div>
+                            <div class="divider"></div>
+                            <div class="coisas centerGrid">
+                                <span>2</span>
+                                <span>R</span>
+                                <input type="number" name="" id="raioChatas">
+                            </div>
+                        </div>
+                
+                    </div>    
+                    <button class="btnCalcular">Calcular</button>
+                </div>
+                <div class="s hidden lador">
+                    <div class="tittleHolder">
+                        <h2 class="wireTittle">Solenoide</h2>
+                    </div>
+                    <div class="count">
+                
+                        <div class="variavel centerGrid">
+                            <span class="big">B</span>
+                            <input type="number" name="" id="CampoSolenoide">
+                            <span>=</span>
+                        </div>
+                
+                        <div class="minors">
+                            <div class="coisas centerGrid">
+                                <span>n</span>
+                                <input type="number" name="" id="nSolenoide" value="">
+                                <span>/</span>
+                                <span>l</span>
+                                <input type="number" name="" id="lSolenoide" value="">
+                                <span>μ<sub>0</sub> </span>
+                                <input type="number" name="" id="miSolenoide">
+                                <span>i</span>
+                                <input type="number" name="" id="intensidadeSolenoide">
+                            </div>
+                        </div>
+                
+                    </div>    
+                    <button class="btnCalcular">Calcular</button>
+                </div>
+                        
+            </div>
+        </section>
+
+        <section id="resultBox" class="centerGrid hidden">
+            <div id="result">
+                Resultado : 
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="modal.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
